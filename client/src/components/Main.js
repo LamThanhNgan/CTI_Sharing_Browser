@@ -168,7 +168,7 @@ export const Main = props => {
 						exact
 						path="/chaincodes"
 						render={routeprops => (
-							<SubmitView />
+							<ChaincodeView {...{ ...chaincodeViewProps, ...routeprops }} />
 						)}
 					/>
 					<Private
@@ -185,13 +185,7 @@ export const Main = props => {
 							<NetworkView {...{ ...networkViewProps, ...routeprops }} />
 						)}
 					/>
-					<Private
-						exact
-						path="/submit"
-						render={routeprops => (
-							<SubmitView/>
-						)}
-					/>
+					<Private exact path="/submit" render={routeprops => <SubmitView />} />
 					<Private
 						exact
 						path="/transactions"

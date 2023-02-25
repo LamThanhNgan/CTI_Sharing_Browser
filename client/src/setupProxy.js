@@ -2,14 +2,16 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = app => {
 	app.use(
-		createProxyMiddleware('/api/*', {
-			target: 'http://localhost:8080/',
+		createProxyMiddleware('/apiV2/**', {
+			target: 'http://localhost:4444',
+			changeOrigin: true,
 			secure: false
 		})
 	);
 	app.use(
-		createProxyMiddleware('/api/queryallcars', {
-			target: 'http://localhost:4444/',
+		createProxyMiddleware('/api/**', {
+			target: 'http://localhost:8080',
+			changeOrigin: true,
 			secure: false
 		})
 	);

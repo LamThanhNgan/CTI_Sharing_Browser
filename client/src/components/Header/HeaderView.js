@@ -363,6 +363,7 @@ export class HeaderView extends Component {
 
 	registerOpen = () => {
 		this.setState(() => ({ registerOpen: true }));
+		console.log('Resgiter');
 	};
 
 	registerClose = () => {
@@ -596,7 +597,7 @@ export class HeaderView extends Component {
 														<FontAwesome
 															name="user-plus"
 															onClick={() => this.registerOpen()}
-														/>{' '}
+														/>
 														User management
 													</div>
 												</DropdownItem>
