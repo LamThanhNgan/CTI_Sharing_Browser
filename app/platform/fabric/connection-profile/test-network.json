@@ -8,7 +8,7 @@
 			"id": "exploreradmin",
 			"password": "exploreradminpw"
 		},
-		"enableAuthentication": false,
+		"enableAuthentication": true,
 		"organization": "Org1MSP",
 		"connection": {
 			"timeout": {
@@ -39,7 +39,7 @@
 		"Org1MSP": {
 			"mspid": "Org1MSP",
 			"adminPrivateKey": {
-				"path": "/home/ubuntu/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/b6e05763023626ea45f560fa5740dcac2ed3ade54b11eaab3e94a5e8ff41800e_sk"
+				"path": "/home/ubuntu/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/bbe90b4532d54b07021167944f0ffdc4fef41eab1ba8e1029b20b855cd34eab4_sk"
 			},
 			"peers": ["peer0.org1.example.com"],
 			"signedCert": {
