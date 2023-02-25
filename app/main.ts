@@ -87,13 +87,13 @@ async function startExplorer() {
 	explorer.getApp().use(
 		helmet.contentSecurityPolicy({
 			directives: {
-				defaultSrc: ["'self'"],
-				styleSrc: ["'self'", "'unsafe-inline'"],
-				scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
-				objectSrc: ["'self'"],
-				frameSrc: ["'self'"],
-				fontSrc: ["'self'"],
-				imgSrc: ["'self' data: https:; "]
+				defaultSrc: ["'*'"],
+				styleSrc: ["'*'", "'unsafe-inline'"],
+				scriptSrc: ["'*'", "'unsafe-inline'", "'unsafe-eval'"],
+				objectSrc: ["'*'"],
+				frameSrc: ["'*'"],
+				fontSrc: ["'*'"],
+				imgSrc: ["'*' data: https:; "]
 			}
 		})
 	);
